@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background: linear-gradient(to right, #160A3A, rgb(0, 72, 255));
+    --main-color: #EAE34A;
+    --black: #13131a;
+    --bg: #1B0C4D;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    display: inline-block;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.header .logo img {
+    height: 5rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+
+
+#menu-btn {
+    display: none;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background: #37266F;
+    padding: .9rem 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: var(--main-color);
+    color: black;
+}
+
+.container-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+/* "home section" */
+.container {
+    margin-top: 13rem;
+    display: flex;
+    gap: 10rem;
+}
+
+.container .coursera {
+    font-size: 1.5rem;
+    color: #fff;
+    background: linear-gradient(90deg, #241457 2.27%, #4F2BBD 102.95%);
+    width: 200px;
+    padding: .6rem;
+}
+
+.container .content h1 {
+    color: #fff;
+    font-size: 6rem;
+    margin-top: 3rem;
+}
+
+.container .content span {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.container .content .body-text {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 3rem 0;
+}
+
+.container .content .stars {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.container .content .stars-icon i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.container .content .stars-icon p {
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.container .content .contant-icon {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.container .content .contant-icon div {
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.container .content img {
+    height: 518px;
+    width: 518px;
+}
+
+
+
+/* course */
+.course {
+    background: #2B0D57;
+}
+
+.course-items {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+
+.course-items h3 {
+    font-size: 48px;
+    color: #fff;
+}
+
+.course-items p {
+    font-size: 24px;
+    color: #B7AACC;
+}
+
+.course-items img {
+    font-size: 24px;
+    color: #B7AACC;
+}
+
+.course-items .course-content {
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* skills */
+.skills {
+    background: #FAF6FF;
+
+}
+
+
+.skills p {
+    font-size: 34px;
+    color: #4B28B5;
+}
+
+.skills h3 {
+    font-size: 54px;
+    color: #010A12;
+}
+
+.skills-content {
+    display: flex;
+    gap: 60px;
+    margin-top: 59px;
+}
+
+.skills-des {
+    margin-top: 40px;
+}
+
+.skills-content .skills-requirement {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.skills-content .skills-requirement img {
+    justify-content: center;
+}
+
+
+.skills-content .skills-des .points {
+    font-size: 24px;
+}
+
+.skills-content .skills-des .points-des {
+    margin: 15px 0;
+    color: #434254;
+    font-size: 18px;
+}
+
+.skills-content .skills-des .Get-Started {
+    width: 224px;
+    height: 54px;
+    top: 574px;
+    left: 730px;
+    gap: 0px;
+    border-radius: 6px 0px 0px 0px;
+    border: 1px solid #9B98D9;
+
+}
+
+
+.skills-content .skills-des p {
+    font-size: 18px;
+    color: var(--black);
+    margin: 30px 0;
+}
+
+/* works together */
+
+.works-together {
+    background: #FAF6FF;
+}
+
+.works-together .works-together-content {
+    background: #4942BB;
+    width: Hug (1, 170px)px;
+    height: Hug (480px)px;
+    top: 4805px;
+    left: 135px;
+    padding: 70px 186px 70px 185px;
+    gap: 10px;
+    border-radius: 24px;
+}
+
+.works-together .works-together-content .heading h3 {
+    font-size: 40px;
+}
+
+.works-together .works-together-content .heading p {
+    font-size: 18px;
+    color: #DFDDF3;
+    margin-top: 30px;
+}
+
+.works-together .works-together-content .forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.works-together .works-together-content .course__subscribe input {
+    padding: 20px;
+    width: 367px;
+    height: 50px;
+    gap: 0px;
+    border-radius: 30px;
+    opacity: 0px;
+    color: #FAF8FF;
+}
+
+.works-together .works-together-content .course__subscribe button {
+    width: 203px;
+    height: 50px;
+    left: 381px;
+    gap: 0px;
+    border-radius: 30px;
+    opacity: 0px;
+    background: var(--main-color);
+}
+
+/* footer */
+.footer {
+    background: #160A3A;
+    width: 100%;
+    height: 301px;
+
+}
